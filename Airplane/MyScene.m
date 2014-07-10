@@ -87,6 +87,15 @@
             SKTexture *texture = [explosionAtlas textureNamed:name];
             [_explosionTextures addObject:texture];
         }
+        
+        //load clouds
+        SKTextureAtlas *cloudsAtlas = [SKTextureAtlas atlasNamed:@"Clouds"];
+        NSArray *textureNamesClouds = [cloudsAtlas textureNames];
+        _cloudsTextures = [NSMutableArray new];
+        for (NSString *name in textureNamesClouds) {
+            SKTexture *texture = [cloudsAtlas textureNamed:name];
+            [_cloudsTextures addObject:texture];
+        }
     }
     return self;
 }
@@ -187,6 +196,23 @@
         
         CGPathRelease(cgpath);
         
+    }
+    
+    //random Clouds
+    int randomClouds = [self getRandomNumberBetween:0 to:1];
+    if(randomClouds == 1){
+        
+        int whichCloud = [self getRandomNumberBetween:0 to:3];
+        SKSpriteNode *cloud = [SKSpriteNode spriteNodeWithTexture:[_cloudsTextures objectAtIndex:whichCloud]];
+        int randomYAxix = [self getRandomNumberBetween:0 to:screenRect.size.height];
+        cloud.position = CGPointMake(screenRect.size.height+cloud.size.height/2, randomYAxix);
+        cloud.zPosition = 1;
+        int randomTimeCloud = [self getRandomNumberBetween:9 to:19];
+        
+        SKAction *move =[SKAction moveTo:CGPointMake(0-cloud.size.height, randomYAxix) duration:randomTimeCloud];
+        SKAction *remove = [SKAction removeFromParent];
+        [cloud runAction:[SKAction sequence:@[move,remove]]];
+        [self addChild:cloud];
     }
     
 }

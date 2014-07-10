@@ -29,4 +29,6 @@ static const uint8_t enemyCategory = 2;
 
 @property NSMutableArray *explosionTextures;
 
+@property NSMutableArray *cloudsTextures;
+
 @end

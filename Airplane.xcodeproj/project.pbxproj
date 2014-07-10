@@ -36,6 +36,7 @@
 		EA12300B196E432C00B9E74D /* SMOKE TRAIL.png in Resources */ = {isa = PBXBuildFile; fileRef = EA123007196E432C00B9E74D /* SMOKE TRAIL.png */; };
 		EA123012196E438000B9E74D /* trail.sks in Resources */ = {isa = PBXBuildFile; fileRef = EA123010196E438000B9E74D /* trail.sks */; };
 		EA123015196E479300B9E74D /* EXPLOSION.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EA123014196E479300B9E74D /* EXPLOSION.atlas */; };
+		EA123017196E47B300B9E74D /* Clouds.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EA123016196E47B300B9E74D /* Clouds.atlas */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,7 @@
 		EA123007196E432C00B9E74D /* SMOKE TRAIL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SMOKE TRAIL.png"; sourceTree = "<group>"; };
 		EA123010196E438000B9E74D /* trail.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = trail.sks; sourceTree = "<group>"; };
 		EA123014196E479300B9E74D /* EXPLOSION.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = EXPLOSION.atlas; sourceTree = "<group>"; };
+		EA123016196E47B300B9E74D /* Clouds.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Clouds.atlas; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 		EA122F78196E3E4100B9E74D /* Airplane */ = {
 			isa = PBXGroup;
 			children = (
+				EA123016196E47B300B9E74D /* Clouds.atlas */,
 				EA123014196E479300B9E74D /* EXPLOSION.atlas */,
 				EA122FF5196E3F6C00B9E74D /* Resources */,
 				EA122F81196E3E4100B9E74D /* AppDelegate.h */,
@@ -285,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA122FFE196E3F6C00B9E74D /* PLANE 8 L.png in Resources */,
+				EA123017196E47B300B9E74D /* Clouds.atlas in Resources */,
 				EA123001196E3F6C00B9E74D /* PLANE 8 SHADOW.png in Resources */,
 				EA12300B196E432C00B9E74D /* SMOKE TRAIL.png in Resources */,
 				EA123015196E479300B9E74D /* EXPLOSION.atlas in Resources */,
