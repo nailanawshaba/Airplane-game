@@ -17,7 +17,6 @@
 		EA122F86196E3E4100B9E74D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA122F84196E3E4100B9E74D /* Main.storyboard */; };
 		EA122F89196E3E4100B9E74D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA122F88196E3E4100B9E74D /* ViewController.m */; };
 		EA122F8C196E3E4100B9E74D /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = EA122F8B196E3E4100B9E74D /* MyScene.m */; };
-		EA122F8E196E3E4100B9E74D /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = EA122F8D196E3E4100B9E74D /* Spaceship.png */; };
 		EA122F90196E3E4100B9E74D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA122F8F196E3E4100B9E74D /* Images.xcassets */; };
 		EA122F97196E3E4100B9E74D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA122F96196E3E4100B9E74D /* XCTest.framework */; };
 		EA122F98196E3E4100B9E74D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA122F70196E3E4100B9E74D /* Foundation.framework */; };
@@ -31,6 +30,11 @@
 		EA123001196E3F6C00B9E74D /* PLANE 8 SHADOW.png in Resources */ = {isa = PBXBuildFile; fileRef = EA122FFA196E3F6C00B9E74D /* PLANE 8 SHADOW.png */; };
 		EA123002196E3F6C00B9E74D /* PLANE PROPELLER 1.png in Resources */ = {isa = PBXBuildFile; fileRef = EA122FFB196E3F6C00B9E74D /* PLANE PROPELLER 1.png */; };
 		EA123003196E3F6C00B9E74D /* PLANE PROPELLER 2.png in Resources */ = {isa = PBXBuildFile; fileRef = EA122FFC196E3F6C00B9E74D /* PLANE PROPELLER 2.png */; };
+		EA123008196E432C00B9E74D /* B 2.png in Resources */ = {isa = PBXBuildFile; fileRef = EA123004196E432C00B9E74D /* B 2.png */; };
+		EA123009196E432C00B9E74D /* PLANE 1 N.png in Resources */ = {isa = PBXBuildFile; fileRef = EA123005196E432C00B9E74D /* PLANE 1 N.png */; };
+		EA12300A196E432C00B9E74D /* PLANE 2 N.png in Resources */ = {isa = PBXBuildFile; fileRef = EA123006196E432C00B9E74D /* PLANE 2 N.png */; };
+		EA12300B196E432C00B9E74D /* SMOKE TRAIL.png in Resources */ = {isa = PBXBuildFile; fileRef = EA123007196E432C00B9E74D /* SMOKE TRAIL.png */; };
+		EA123012196E438000B9E74D /* trail.sks in Resources */ = {isa = PBXBuildFile; fileRef = EA123010196E438000B9E74D /* trail.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +64,6 @@
 		EA122F88196E3E4100B9E74D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EA122F8A196E3E4100B9E74D /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
 		EA122F8B196E3E4100B9E74D /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
-		EA122F8D196E3E4100B9E74D /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		EA122F8F196E3E4100B9E74D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EA122F95196E3E4100B9E74D /* AirplaneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirplaneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA122F96196E3E4100B9E74D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -74,6 +77,11 @@
 		EA122FFA196E3F6C00B9E74D /* PLANE 8 SHADOW.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PLANE 8 SHADOW.png"; sourceTree = "<group>"; };
 		EA122FFB196E3F6C00B9E74D /* PLANE PROPELLER 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PLANE PROPELLER 1.png"; sourceTree = "<group>"; };
 		EA122FFC196E3F6C00B9E74D /* PLANE PROPELLER 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PLANE PROPELLER 2.png"; sourceTree = "<group>"; };
+		EA123004196E432C00B9E74D /* B 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "B 2.png"; sourceTree = "<group>"; };
+		EA123005196E432C00B9E74D /* PLANE 1 N.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PLANE 1 N.png"; sourceTree = "<group>"; };
+		EA123006196E432C00B9E74D /* PLANE 2 N.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PLANE 2 N.png"; sourceTree = "<group>"; };
+		EA123007196E432C00B9E74D /* SMOKE TRAIL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SMOKE TRAIL.png"; sourceTree = "<group>"; };
+		EA123010196E438000B9E74D /* trail.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = trail.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,9 +151,9 @@
 				EA122F88196E3E4100B9E74D /* ViewController.m */,
 				EA122F8A196E3E4100B9E74D /* MyScene.h */,
 				EA122F8B196E3E4100B9E74D /* MyScene.m */,
-				EA122F8D196E3E4100B9E74D /* Spaceship.png */,
 				EA122F8F196E3E4100B9E74D /* Images.xcassets */,
 				EA122F79196E3E4100B9E74D /* Supporting Files */,
+				EA123010196E438000B9E74D /* trail.sks */,
 			);
 			path = Airplane;
 			sourceTree = "<group>";
@@ -182,6 +190,10 @@
 		EA122FF5196E3F6C00B9E74D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				EA123004196E432C00B9E74D /* B 2.png */,
+				EA123005196E432C00B9E74D /* PLANE 1 N.png */,
+				EA123006196E432C00B9E74D /* PLANE 2 N.png */,
+				EA123007196E432C00B9E74D /* SMOKE TRAIL.png */,
 				EA122FF6196E3F6C00B9E74D /* airPlanesBackground.png */,
 				EA122FF7196E3F6C00B9E74D /* PLANE 8 L.png */,
 				EA122FF8196E3F6C00B9E74D /* PLANE 8 N.png */,
@@ -271,15 +283,19 @@
 			files = (
 				EA122FFE196E3F6C00B9E74D /* PLANE 8 L.png in Resources */,
 				EA123001196E3F6C00B9E74D /* PLANE 8 SHADOW.png in Resources */,
+				EA12300B196E432C00B9E74D /* SMOKE TRAIL.png in Resources */,
 				EA122F7D196E3E4100B9E74D /* InfoPlist.strings in Resources */,
+				EA123012196E438000B9E74D /* trail.sks in Resources */,
 				EA123000196E3F6C00B9E74D /* PLANE 8 R.png in Resources */,
 				EA123002196E3F6C00B9E74D /* PLANE PROPELLER 1.png in Resources */,
 				EA122F90196E3E4100B9E74D /* Images.xcassets in Resources */,
+				EA123008196E432C00B9E74D /* B 2.png in Resources */,
 				EA122FFD196E3F6C00B9E74D /* airPlanesBackground.png in Resources */,
+				EA12300A196E432C00B9E74D /* PLANE 2 N.png in Resources */,
 				EA122FFF196E3F6C00B9E74D /* PLANE 8 N.png in Resources */,
 				EA123003196E3F6C00B9E74D /* PLANE PROPELLER 2.png in Resources */,
-				EA122F8E196E3E4100B9E74D /* Spaceship.png in Resources */,
 				EA122F86196E3E4100B9E74D /* Main.storyboard in Resources */,
+				EA123009196E432C00B9E74D /* PLANE 1 N.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
