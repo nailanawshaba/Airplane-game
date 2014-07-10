@@ -12,38 +12,28 @@
 
 -(id)initWithSize:(CGSize)size {    
     if (self = [super initWithSize:size]) {
-        /* Setup your scene here */
+        //init several sizes used in all scene
+        screenRect = [[UIScreen mainScreen] bounds];
+        screenHeight = screenRect.size.height;
+        screenWidth = screenRect.size.width;
         
-        self.backgroundColor = [SKColor colorWithRed:0.15 green:0.15 blue:0.3 alpha:1.0];
+        //adding the airplane
+        _plane = [SKSpriteNode spriteNodeWithImageNamed:@"PLANE 8 N.png"];
+        _plane.scale = 0.6;
+        _plane.zPosition = 2;
+        _plane.position = CGPointMake(screenWidth/2, 15+_plane.size.height/2);
+        [self addChild:_plane];
         
-        SKLabelNode *myLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
-        
-        myLabel.text = @"Hello, World!";
-        myLabel.fontSize = 30;
-        myLabel.position = CGPointMake(CGRectGetMidX(self.frame),
-                                       CGRectGetMidY(self.frame));
-        
-        [self addChild:myLabel];
+        //adding the background
+        SKSpriteNode *background = [SKSpriteNode spriteNodeWithImageNamed:@"airPlanesBackground"];
+        background.position = CGPointMake(CGRectGetMidX(self.frame),CGRectGetMidY(self.frame));
+        [self addChild:background];
     }
     return self;
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     /* Called when a touch begins */
-    
-    for (UITouch *touch in touches) {
-        CGPoint location = [touch locationInNode:self];
-        
-        SKSpriteNode *sprite = [SKSpriteNode spriteNodeWithImageNamed:@"Spaceship"];
-        
-        sprite.position = location;
-        
-        SKAction *action = [SKAction rotateByAngle:M_PI duration:1];
-        
-        [sprite runAction:[SKAction repeatActionForever:action]];
-        
-        [self addChild:sprite];
-    }
 }
 
 -(void)update:(CFTimeInterval)currentTime {
