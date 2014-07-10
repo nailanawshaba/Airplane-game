@@ -82,6 +82,21 @@
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     /* Called when a touch begins */
+    
+    CGPoint location = [_plane position];
+    SKSpriteNode *bullet = [SKSpriteNode spriteNodeWithImageNamed:@"B 2.png"];
+    
+    bullet.position = CGPointMake(location.x,location.y+_plane.size.height/2);
+    //bullet.position = location;
+    bullet.zPosition = 1;
+    bullet.scale = 0.8;
+    
+    SKAction *action = [SKAction moveToY:self.frame.size.height+bullet.size.height duration:2];
+    SKAction *remove = [SKAction removeFromParent];
+    
+    [bullet runAction:[SKAction sequence:@[action,remove]]];
+    
+    [self addChild:bullet];
 }
 
 -(void)outputAccelertionData:(CMAcceleration)acceleration
